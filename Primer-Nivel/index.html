@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso 1 - Slider de Preguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Curso 1: Slider de Preguntas</h1>
+    </header>
+    <main>
+        <div id="question-slider" class="slider">
+            <div class="slide" id="slide1">
+                <h2>Pregunta 1</h2>
+                <p>¿Cuál es la capital de Francia?</p>
+                <ul>
+                    <li><input type="radio" name="q1" value="paris"> París</li>
+                    <li><input type="radio" name="q1" value="berlin"> Berlín</li>
+                    <li><input type="radio" name="q1" value="londres"> Londres</li>
+                </ul>
+            </div>
+            <div class="slide" id="slide2">
+                <h2>Pregunta 2</h2>
+                <p>¿Cuál es el río más largo del mundo?</p>
+                <ul>
+                    <li><input type="radio" name="q2" value="amazonas"> Amazonas</li>
+                    <li><input type="radio" name="q2" value="nilo"> Nilo</li>
+                    <li><input type="radio" name="q2" value="mississippi"> Mississippi</li>
+                </ul>
+            </div>
+            <!-- Añade más slides para las demás preguntas -->
+        </div>
+        <button id="prevBtn" onclick="moveSlide(-1)">Anterior</button>
+        <button id="nextBtn" onclick="moveSlide(1)">Siguiente</button>
+        <div id="result"></div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
